@@ -96,6 +96,19 @@ Completion tokens
 | de-de | ~ 2.3 tokens |
 | zh-cn | ~ 2.0 tokens |
 
+# Token 计数
+
+- 非流式API调用会直接返回token计数。
+- [OpenAI Platform](https://platform.openai.com/tokenizer) 提供Tokenizer\,
+
+- python: [openai / tiktoken : \(github\.com\) gpt\-3\-encoder ](https://www.npmjs.com/package/gpt-3-encoder)
+- [npm  \(npmjs\.com\)](https://www.npmjs.com/package/gpt-3-encoder)
+
+流式响应没有带token计数，可以使用Azure Functions用上面的lib进行自行实时计数。参考右边架构。
+
+![](img/test13.png)
+
+Azure Functions 代码参考 : [radezhen / tkcount  \(github\.com\)](https://github.com/radezheng/tkcount)
 
 # 服务配额和限制
 #### 可在AOAI Studio查看和调整
@@ -151,18 +164,6 @@ Completion tokens
 | GPT4-8K | 900 PTUs | v0314: 126K – 378K TPM v0613: 216K – 648K TPM | 300 PTUs | v0314: +42K – 126K TPM v0613: +72K – 216K TPM |
 | GPT4-32K | 1800 PTUs | v0314: 252K – 756K v0613: 432K – 1,296K TPM | 600 PTUs | V0314: +84K – 252K TPM V0613: +144K – 432K TPM |
 
-# Token 计数
-
-- [OpenAI Platform](https://platform.openai.com/tokenizer) 提供Tokenizer\,
-
-- python: [openai / tiktoken : \(github\.com\) gpt\-3\-encoder ](https://www.npmjs.com/package/gpt-3-encoder)
-- [npm  \(npmjs\.com\)](https://www.npmjs.com/package/gpt-3-encoder)
-
-流式响应没有带token计数，可以使用Azure Functions用上面的lib进行自行实时计数。参考右边架构。
-
-![](img/test13.png)
-
-Azure Functions 代码参考 : [radezhen / tkcount  \(github\.com\)](https://github.com/radezheng/tkcount)
 
 # 内容管理系统 Azure OpenAI 会增加内容过滤以确保合规，以防止服务滥用和生成有害内容
 
@@ -170,22 +171,22 @@ Azure Functions 代码参考 : [radezhen / tkcount  \(github\.com\)](https://git
 
  在应用程序的设计中，请考虑以下最佳做法，以提供积极的应用程序体验，同时最大程度地减少潜在危害：
 
- 确定你希望如何处理用户发送的提示中包含分类为某个筛选类别和严重性级别的内容或者用户滥用应用程序的情况。
+ - 确定你希望如何处理用户发送的提示中包含分类为某个筛选类别和严重性级别的内容或者用户滥用应用程序的情况。
 
- 检查    finish\_reason    以查看是否已完成筛选。
+ - 检查    finish\_reason    以查看是否已完成筛选。
 
- 检查    content\_filter\_result    中是否没有错误对象（表示未运行内容筛选）
+ - 检查    content\_filter\_result    中是否没有错误对象（表示未运行内容筛选）
 
 [Azure OpenAI  服务内容筛选  \- Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/concepts/content-filter)
 
-这个会影响流式的响应，可申请关闭或调整过滤规则
+这个会影响流式的响应，可申请关闭或调整过滤规则。需要时间，建议先调整过滤规则。
 
 [Azure OpenAI Limited Access Review: Modified Content Filters and Abuse Monitoring \(microsoft\.com\)](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xURE01NDY1OUhBRzQ3MkQxMUhZSE1ZUlJKTiQlQCN0PWcu)
 
 ![](img/test14.png)
 
 ![filteroff](img/filteroff.jpg)
-关闭需要申请和时间，建议先调整过滤规则
+
 # 自定义筛选器 –调到最高降低内容过滤的敏感性
 
 ![](img/test15.png)
