@@ -5,6 +5,64 @@
 #### Rade Zheng
 技术更新太快，请注意文档更新日期
 
+[帐号部署](./readme.md#帐号部署)
+  
+[部署模型](./readme.md#部署模型)
+
+[开始聊天](./readme.md#开始聊天)
+
+[密钥和Endpoint](./readme.md#密钥和endpoint)
+
+[访问安全](./readme.md#访问安全)
+
+[可用版本与区域](./readme.md#可用版本与区域2024-01-08)
+
+[Tokens – 计费单位](./readme.md#tokens--计费单位)
+
+[Token 计数](./readme.md#token-计数)
+
+[服务配额和限制](./readme.md#服务配额和限制)
+
+[所有模型都有默认配额（速率限制）](./readme.md#所有模型都有默认配额速率限制)
+
+[增加配额的方式](./readme.md#增加配额的方式)
+
+[专用容量 - Provisioned Throughput Unit](./readme.md#专用容量---provisioned-throughput-unit)
+
+[内容管理系统 Azure OpenAI 会增加内容过滤以确保合规，以防止服务滥用和生成有害内容](./readme.md#内容管理系统-azure-openai-会增加内容过滤以确保合规以防止服务滥用和生成有害内容)
+
+[自定义筛选器 –调到最高降低内容过滤的敏感性](./readme.md#自定义筛选器-调到最高降低内容过滤的敏感性)
+
+[数据合规和隐私保护](./readme.md#数据合规和隐私保护)
+
+[负载均衡+网络加速](./readme.md#负载均衡网络加速)
+
+[网络优化 - 专线+私有链接](./readme.md#网络优化---专线私有链接)
+
+[使用方式](./readme.md#使用方式)
+
+[提示工程指南](./readme.md#提示工程指南)
+
+[如需私域数据，优先方案: 检索增强生成(RAG) - 拓展GPT的知识边界](./readme.md#如需私域数据优先方案-检索增强生成rag---拓展gpt的知识边界)
+
+[微调: 使用特定域数据进行模型调整](./readme.md#微调-使用特定域数据进行模型调整)
+
+[什么时候用微调？](./readme.md#什么时候用微调)
+
+[RAG LLM App Stack](./readme.md#rag-llm-app-stack)
+
+[Architecture - LLM Stack on Azure](./readme.md#architecture---llm-stack-on-azure)
+
+[内部探索Azure OpenAI的能力与场景 部署方式 – 建议参考这些开发更具商业化的客户端。](./readme.md#内部探索azure-openai的能力与场景-部署方式--建议参考这些开发更具商业化的客户端)
+
+[内部知识库/QA客户类应用测试](./readme.md#内部知识库qa客户类应用测试)
+
+[Copilot定制开发的框架](./readme.md#copilot定制开发的框架)
+
+
+
+
+
 # 帐号部署
 ### 一个订阅可多区域部署Azure OpenAI服务，TPM按区域单独统计
 [https://portal\.azure\.com](https://portal.azure.com/)
