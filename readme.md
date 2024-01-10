@@ -1,4 +1,4 @@
-![](img%5Ctest0.jpg)
+![](img/test0.jpg)
 
 # Azure OpenAI 使用指南
 
@@ -9,9 +9,9 @@
 ### 一个订阅可多区域部署Azure OpenAI服务，TPM按区域单独统计
 [https://portal\.azure\.com](https://portal.azure.com/)
 #### 搜索"OpenAI"，创建资源
-![](img%5Ctest2.png)
+![](img/test2.png)
 
-![](img%5Ctest1.png)
+![](img/test1.png)
 
 
 
@@ -22,9 +22,9 @@
 # 部署模型
 #### https://oai.azure.com/
 
-![](img%5Ctest3.png)
+![](img/test3.png)
 
-![](img%5Ctest4.png)
+![](img/test4.png)
 
 TPM按需要可调到最大\(按区域统计\)
 
@@ -34,14 +34,14 @@ TPM按需要可调到最大\(按区域统计\)
 
 # 开始聊天
 
-![](img%5Ctest5.png)
+![](img/test5.png)
 
 
 
 # 密钥和Endpoint
 
 [https://portal\.azure\.com](https://portal.azure.com/)
-![](img%5Ctest6.png)
+![](img/test6.png)
 
 - API调用时用的 __engine__ 名称为上面部署模型时使用的 __部署名__ 。
 
@@ -70,9 +70,9 @@ TPM按需要可调到最大\(按区域统计\)
 
 # 可用版本与区域(2024-01-08)
 
-![](img%5Ctest7.png)
+![](img/test7.png)
 
-![](img%5Ctest8.png)
+![](img/test8.png)
 
 [Azure OpenAI ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/concepts/models)[服务模型 ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/concepts/models)[\- Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/concepts/models)
 
@@ -99,11 +99,11 @@ Completion tokens
 
 # 服务配额和限制
 #### 可在AOAI Studio查看和调整
-![](img%5Ctest9.png)
+![](img/test9.png)
 
 [Azure OpenAI  服务配额和限制  \- Azure AI services | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/quotas-limits?branch=release-azure-openai-preview)
 
-![](img%5Ctest10.png)
+![](img/test10.png)
 
 1K TPM 可获得 6 RPM\(Requests/分钟\)
 
@@ -128,9 +128,9 @@ Completion tokens
 - 专用容量\(PTU\) – 后面介绍
 
 如：使用APIM 做网关实现多区域负载均衡。 总TPM = 区域数 \* 模型最大TPM
-![](img%5Ctest11.png)
+![](img/test11.png)
 
-![](img%5Ctest12.png)
+![](img/test12.png)
 
 参考 [管理 Azure OpenAI 服务配额  \- Azure AI services | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/quota?tabs=rest#rate-limit-best-practices)
 
@@ -160,7 +160,7 @@ Completion tokens
 
 流式响应没有带token计数，可以使用Azure Functions用上面的lib进行自行实时计数。参考右边架构。
 
-![](img%5Ctest13.png)
+![](img/test13.png)
 
 Azure Functions 代码参考 : [radezhen / tkcount  \(github\.com\)](https://github.com/radezheng/tkcount)
 
@@ -182,13 +182,13 @@ Azure Functions 代码参考 : [radezhen / tkcount  \(github\.com\)](https://git
 
 [Azure OpenAI Limited Access Review: Modified Content Filters and Abuse Monitoring \(microsoft\.com\)](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xURE01NDY1OUhBRzQ3MkQxMUhZSE1ZUlJKTiQlQCN0PWcu)
 
-![](img%5Ctest14.png)
+![](img/test14.png)
 
-![filteroff](img%5Cfilteroff.jpg)
+![filteroff](img/filteroff.jpg)
 关闭需要申请和时间，建议先调整过滤规则
 # 自定义筛选器 –调到最高降低内容过滤的敏感性
 
-![](img%5Ctest15.png)
+![](img/test15.png)
 
 # 数据合规和隐私保护
 
@@ -207,7 +207,7 @@ Azure Functions 代码参考 : [radezhen / tkcount  \(github\.com\)](https://git
 
 ### 方式一：最简单 \- 网络加速，单一Endpoint \(或自己在本地做负载\)
 
-![](img%5Ctest16.png)
+![](img/test16.png)
 
 
 [使用  Azure Front Door  转发  Azure OpenAI \[ 防火墙功能可选 \] | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/web-application-firewall/afds/protect-azure-open-ai#create-an-azure-front-door-instance-with-azure-waf)
@@ -216,13 +216,13 @@ Azure Functions 代码参考 : [radezhen / tkcount  \(github\.com\)](https://git
 
 ### 方式二：APIM 网络加速，负载均衡，可配出错轮询策略
 
-![](img%5Ctest19.png)
+![](img/test19.png)
 
 [通过](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[Azure API](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[管理服务（](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[APIM](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[）解决](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[Azure OpenAI Token](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[限制问题 ](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[\(qq\.com\)](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)
 
 ### 方式三: 自定义网关实现 - 负载均衡+网络加速
 
-![](img%5Coption3.png)
+![](img/option3.png)
 
 
 # 网络优化 - 专线+私有链接 
@@ -275,7 +275,7 @@ Adjusting 'Temperature' and ‘Top\_P’ parameters
 
 # 如需私域数据，优先方案: 检索增强生成(RAG) - 拓展GPT的知识边界
 
-![](img%5Crag1.png)
+![](img/rag1.png)
 
 
 # 微调: 使用特定域数据进行模型调整
@@ -284,7 +284,7 @@ _Fine\-tuning_   结果是使用更新的权重和偏差生成的新模型 \.
 
 慎重使用，对训练数据质量要求高，结果质量难预料。
 
-![](img%5Cft1.png)
+![](img/ft1.png)
 
 # 什么时候用微调？
 
@@ -303,7 +303,7 @@ _Fine\-tuning_   结果是使用更新的权重和偏差生成的新模型 \.
 
 # RAG LLM App Stack
 
-![](img%5Ctest52.png)
+![](img/test52.png)
 
 Source: [https://a16z\.com/emerging\-architectures\-for\-llm\-applications/](https://a16z.com/emerging-architectures-for-llm-applications/)
 
