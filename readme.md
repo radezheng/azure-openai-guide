@@ -1,5 +1,3 @@
-![](img/test0.jpg)
-
 # Azure OpenAI 使用指南
 
 #### Rade Zheng
