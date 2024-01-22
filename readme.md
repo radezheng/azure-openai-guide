@@ -73,7 +73,7 @@
 
 
 
-[操作说明：创建和部署 ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/create-resource?pivots=web-portal)[Azure OpenAI ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/create-resource?pivots=web-portal)[服务资源 ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/create-resource?pivots=web-portal)[\- Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/create-resource?pivots=web-portal)
+[操作说明：创建和部署  Azure OpenAI  服务资源  \- Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/create-resource?pivots=web-portal)
 
 # 部署模型
 #### https://oai.azure.com/
@@ -86,7 +86,7 @@ TPM按需要可调到最大\(按区域统计\)
 
 内容筛选器自定一个，都调到最高。
 
-[操作说明：创建和部署 ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model)[Azure OpenAI ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model)[服务资源 ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model)[\- Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model)
+[操作说明：创建和部署 Azure OpenAI  服务资源  \- Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model)
 
 # 开始聊天
 
@@ -116,13 +116,13 @@ TPM按需要可调到最大\(按区域统计\)
 
 内网访问 \- 需VPN或专线
 
-[为 ](https://learn.microsoft.com/zh-cn/azure/ai-services/cognitive-services-virtual-networks?tabs=portal)[Azure AI ](https://learn.microsoft.com/zh-cn/azure/ai-services/cognitive-services-virtual-networks?tabs=portal)[服务配置虚拟网络 ](https://learn.microsoft.com/zh-cn/azure/ai-services/cognitive-services-virtual-networks?tabs=portal)[\- Azure AI services | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/cognitive-services-virtual-networks?tabs=portal)
+[为  Azure AI  服务配置虚拟网络  \- Azure AI services | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/cognitive-services-virtual-networks?tabs=portal)
 
 限定帐户访问
 
-[如何使用托管标识配置 ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/managed-identity)[Azure OpenAI ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/managed-identity)[服务 ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/managed-identity)[\- Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/managed-identity)
+[如何使用托管标识配置  Azure OpenAI 服务 \- Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/managed-identity)
 
-[Azure OpenAI ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/role-based-access-control)[的基于角色的访问控制 ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/role-based-access-control)[\- Azure AI services | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/role-based-access-control)
+[Azure OpenAI 的基于角色的访问控制 \- Azure AI services | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/role-based-access-control)
 
 # 可用版本与区域(2024-01-08)
 
@@ -130,7 +130,7 @@ TPM按需要可调到最大\(按区域统计\)
 
 ![](img/test8.png)
 
-[Azure OpenAI ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/concepts/models)[服务模型 ](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/concepts/models)[\- Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/concepts/models)
+[Azure OpenAI 服务模型 \- Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/concepts/models)
 
 # Tokens – 计费单位
 
@@ -275,7 +275,7 @@ Azure Functions 代码参考 : [radezhen / tkcount  \(github\.com\)](https://git
 
 ![](img/test19.png)
 
-[通过](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[Azure API](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[管理服务（](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[APIM](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[）解决](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[Azure OpenAI Token](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[限制问题 ](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)[\(qq\.com\)](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)
+[通过Azure API管理服务（APIM）解决Azure OpenAI Token限制问题 \(qq\.com\)](https://mp.weixin.qq.com/s/gdite9Xd1NmqSzu9-TKdAw)
 
 ### 方式三: 自定义网关实现 - 负载均衡+网络加速
 
@@ -379,6 +379,11 @@ Source: [https://a16z\.com/emerging\-architectures\-for\-llm\-applications/](htt
 * 使用Azure Search作为embedding知识库
   * [https://github\.com/Azure\-Samples/azure\-search\-openai\-demo/](https://github.com/Azure-Samples/azure-search-openai-demo/)
   * 部署参考指南: [radezheng /ai\-search\-demo\-guide \(github\.com\)](https://github.com/radezheng/ai-search-demo-guide)
+
+# 企业部署参考架构
+* [企业级架构](https://learn.microsoft.com/zh-cn/azure/architecture/ai-ml/architecture/baseline-openai-e2e-chat)
+![arc](./img/openai-end-to-end-aml-deployment.svg)
+* [github sample](https://github.com/azure-Samples/openai-end-to-end-baseline)
 
 # Copilot定制开发的框架
 
