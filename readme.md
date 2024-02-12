@@ -124,14 +124,21 @@ TPM按需要可调到最大\(按区域统计\)
 
 [Azure OpenAI 的基于角色的访问控制 \- Azure AI services | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/how-to/role-based-access-control)
 
-# 可用版本与区域(2024-01-08)
+# 可用版本与区域(2024-02-12)
 
 ![](img/test7.png)
 
 ![](img/test8.png)
 
-[Azure OpenAI 服务模型 \- Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/concepts/models)
+更详细请参考在线文档: [Azure OpenAI 服务模型 \- Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/concepts/models)
 
+[不同区域的网络延迟(不包括API)测试, 从当前浏览器所在网络发起](https://www.azurespeed.com/Azure/Latency)
+![](img/speedtest.png)
+
+# Assistant API (助手)
+[快速入门：开始使用 Azure OpenAI 助手（预览版）](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/assistants-quickstart?tabs=command-line&pivots=programming-language-studio)
+
+![](./img/assistantapi.png)
 # Tokens – 计费单位
 
 每个AOAI资源都提供一定的吞吐量，具体取决于模型
@@ -377,8 +384,9 @@ Source: [https://a16z\.com/emerging\-architectures\-for\-llm\-applications/](htt
 # 内部知识库/QA客户类应用测试
 
 * 使用Azure Search作为embedding知识库
-  * [https://github\.com/Azure\-Samples/azure\-search\-openai\-demo/](https://github.com/Azure-Samples/azure-search-openai-demo/)
-  * 部署参考指南: [radezheng /ai\-search\-demo\-guide \(github\.com\)](https://github.com/radezheng/ai-search-demo-guide)
+  * Python版本:[https://github\.com/Azure\-Samples/azure\-search\-openai\-demo/](https://github.com/Azure-Samples/azure-search-openai-demo/)
+  * Pyhton版本部署参考指南: [radezheng /ai\-search\-demo\-guide \(github\.com\)](https://github.com/radezheng/ai-search-demo-guide)
+  * [其他语言版本](https://github.com/Azure-Samples/azureai-samples/tree/main?tab=readme-ov-file#azure-ai-search)
 
 # 企业部署参考架构
 * [企业级架构](https://learn.microsoft.com/zh-cn/azure/architecture/ai-ml/architecture/baseline-openai-e2e-chat)
